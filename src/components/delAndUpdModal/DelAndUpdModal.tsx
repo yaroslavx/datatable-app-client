@@ -39,7 +39,7 @@ const DelAndUpdModal: React.FC<DelAndUpdModalProps> = ({ itemId }) => {
   // При ошибке – уведомление об ошибке
   const handleDelete = async (id: ObjectId) => {
     try {
-      await axios.delete('http://localhost:5000/item', { data: { id } });
+      await axios.delete(`${process.env.REACT_APP_API_URL}item`, { data: { id } });
       dispatch(setRefresh());
       dispatch(setRefreshEvent({ event: 'delete' }));
     } catch (err) {
@@ -54,10 +54,10 @@ const DelAndUpdModal: React.FC<DelAndUpdModalProps> = ({ itemId }) => {
   const handleUpdate: SubmitHandler<FormValues> = async (data) => {
     console.log(data.available)
     try {
-      const item = await axios.get(`http://localhost:5000/${itemId}`);
+      const item = await axios.get(`${process.env.REACT_APP_API_URL}${itemId}`);
       if (data.customer !== '') item.data.customer = data.customer;
       item.data.available = data.available;
-      await axios.put('http://localhost:5000/item', item.data);
+      await axios.put(`${process.env.REACT_APP_API_URL}item`, item.data);
       dispatch(setRefresh());
       dispatch(setRefreshEvent({ event: 'update' }));
     } catch (err) {

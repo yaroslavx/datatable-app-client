@@ -37,7 +37,7 @@ const CreateModal = () => {
   // При ошибке – уведомление об ошибке
   const handleCreate: SubmitHandler<FormValues> = async (data) => {
     try {
-      await axios.post('http://localhost:5000/item', data);
+      await axios.post(`${process.env.REACT_APP_API_URL}item`, data);
       reset({
         available: false,
         customer: '',

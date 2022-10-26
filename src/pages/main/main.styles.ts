@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledMainDiv = styled.div`
-  margin: 15px 0;
+  margin: 0 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
+  background-color: #598759;
+  transform: scale(0.8);
 
   .container {
     position: relative;

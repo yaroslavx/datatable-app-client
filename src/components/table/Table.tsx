@@ -13,7 +13,7 @@ import { HiDotsHorizontal } from 'react-icons/hi';
 import { ObjectId } from 'bson'
 
 // Количество элементов на страницу
-const PageSize = 10;
+const PageSize = 5;
 
 export type Item = {
   _id: ObjectId

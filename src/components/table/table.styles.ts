@@ -111,9 +111,5 @@ export const StyledTableDiv = styled.div`
     color: transparent;
     padding: 5px;
     border-radius: 5px;
-    &:hover {
-      cursor: pointer;
-      background-color: #cccccc;
-    }
   }
 `;

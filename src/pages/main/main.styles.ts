@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMainDiv = styled.div`
-  margin: 0 0;
-  padding: 0;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  background-color: #598759;
+  margin: 0;
   transform: scale(0.8);
 
   .container {

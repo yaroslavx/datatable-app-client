@@ -32,7 +32,7 @@ export const StyledTableDiv = styled.div`
   .th-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0 10px;
   }
 
   .sorting-container {

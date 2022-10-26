@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledMainDiv = styled.div`
   margin: 0;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
 
   .container {
     position: relative;

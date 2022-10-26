@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMainDiv = styled.div`
-  margin: 0;
+  margin: 0 0;
   /* transform: scale(0.8); */
 
   .container {
